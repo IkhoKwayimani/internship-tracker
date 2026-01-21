@@ -152,6 +152,6 @@ def menu():
         else:
             print("\nPlease choose 1-5.\n")
 
-
 if __name__ == "__main__":
+    ensure_file_exists()
     menu()
