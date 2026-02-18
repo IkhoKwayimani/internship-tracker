@@ -47,7 +47,7 @@ def add_application():
     role = input("Role: ").strip()
 
     if company == "" or role == "":
-        print("\n❌ Company and Role are required.\n")
+        print("\n Company and Role are required.\n")
         return
 
     date_applied = input("Date applied (YYYY-MM-DD) [Enter for today]: ").strip()
@@ -72,7 +72,7 @@ def add_application():
     apps.append(new_app)
     save_apps(apps)
 
-    print("\n✅ Saved!\n")
+    print("\n Saved!\n")
 
 
 def view_all():
@@ -121,10 +121,10 @@ def update_status():
                 return
             a["status"] = new_status
             save_apps(apps)
-            print("\n✅ Status updated!\n")
+            print("\n Status updated!\n")
             return
 
-    print("\n❌ ID not found.\n")
+    print("\n ID not found.\n")
 
 
 def menu():
@@ -147,7 +147,7 @@ def menu():
         elif choice == "4":
             update_status()
         elif choice == "5":
-            print("\nGood luck — keep applying daily 💪\n")
+            print("\nGood luck — keep applying daily \n")
             break
         else:
             print("\nPlease choose 1-5.\n")
